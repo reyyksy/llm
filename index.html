@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Akses Eksklusif</title>
+    <style>
+        /* --- Palet Warna (3 Warna) --- */
+        :root {
+            --color-background: #121212; /* Hitam/Abu-abu Sangat Gelap */
+            --color-text: #E0E0E0;        /* Putih Pudar untuk keterbacaan */
+            --color-accent: #007BFF;      /* Biru Elektrik (Aksen Utama) */
+            --color-card-bg: #1E1E1E;     /* Latar belakang kartu */
+            --color-border: #333333;      /* Garis pembatas */
+        }
+
+        /* --- Reset dan Global Styling --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--color-background);
+            color: var(--color-text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* --- Container Utama (Portal Card) --- */
+        .portal-container {
+            background-color: var(--color-card-bg);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Shadow yang memberikan kedalaman */
+            width: 100%;
+            max-width: 450px;
+            padding: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .portal-container:hover {
+            transform: translateY(-5px);
+        }
+
+        /* --- Header & Logo --- */
+        .logo h1 {
+            color: var(--color-accent);
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            color: var(--color-text);
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        /* --- Link Akses (Button) --- */
+        .access-button {
+            display: inline-block;
+            background-color: var(--color-accent);
+            color: var(--color-background); /* Teks tombol berwarna gelap */
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .access-button:hover {
+            background-color: #0056b3; /* Sedikit lebih gelap saat hover */
+            transform: scale(1.05);
+        }
+
+        /* --- Footer/Informasi Tambahan --- */
+        .footer-info {
+            margin-top: 30px;
+            font-size: 0.85em;
+            color: #999999; /* Abu-abu yang sangat lembut */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="portal-container">
+        <div class="logo">
+            <h1>Portal Akses</h1>
+        </div>
+        <p class="subtitle">Silakan klik tombol di bawah untuk mengakses laman eksklusif.</p>
+
+        <!-- Link Utama -->
+        <a href="https://8080-agq7zpkbknzovzbnfewz45o3va.instabox.tech/" class="access-button" target="_blank">
+            Masuk ke Portal
+        </a>
+
+        <div class="footer-info">
+            &copy; 2024 Sistem Akses. Semua hak dilindungi.
+        </div>
+    </div>
+
+</body>
+</html>
